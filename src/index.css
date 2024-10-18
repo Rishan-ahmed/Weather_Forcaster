@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimalist scrollbar design */
+.custom-scrollbar {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.1); /* Scroll thumb and track colors */
+  }
+  
+  /* For Chrome, Edge, Safari */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Track color */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Thumb color */
+    border-radius: 10px;
+    border: 2px solid transparent; /* Adds padding around thumb for minimalist effect */
+  }
+  
+  /* Hover effect for more visibility */
+  .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4); /* Darker thumb on hover */
+  }
+  
